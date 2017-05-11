@@ -1,17 +1,30 @@
-<h1>
-  {{title}}
-</h1>
-<!--when we use form tag angular automatically adds a directive to this form-->
-<!--#form is the template reference variable (the instance of a directive)-->
-<!--so the directive added to the form is called ngForm-->
+<div class="container">
+  <h1>
+    {{title}}
+  </h1>
+  <!--when we use form tag angular automatically adds a directive to this form-->
+  <!--#form is the template reference variable (the instance of a directive)-->
+  <!--so the directive added to the form is called ngForm-->
+  
+  <!--we add novalidate to avoid different browser validation errors-->
+  <form #form="ngForm" novalidate>
 
-<!--we add novalidate to avoid different browser validation errors-->
-<form #form="ngForm" novalidate>
-  <!--to tell ng about a field we add a name and ngModel-->
-  <input type="text" placeholder="Name" name="name" ngModel>
-  <button type="submit">OK</button>
-</form>
+    <div class="form-group">
+      <label>First Name</label>
+      <!--to tell ng about a field we add a name and ngModel-->
+      <!--form-control bootstrap class takes the whole width of our viewport-->
+      <input class="form-control" type="text" name="firstName" ngModel>
+    </div>
+
+    <div class="form-group">
+      <label>First Name</label>
+      <input class="form-control" type="text" name="firstName" ngModel>
+    </div>
+    
+    <button class="btn btn-primary" type="submit">OK</button>
+  </form>
+</div>
 
 <!--we can access directly to the template reference variable from this template-->
 <!--pristine will tell us if the user touched this form-->
-{{ form.pristine }} 
+<!--{{ form.pristine }} -->
