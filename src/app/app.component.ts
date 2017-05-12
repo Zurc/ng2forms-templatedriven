@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Employee } from "./models/employee.model";
 
 @Component({
   selector: 'app-root',
@@ -9,5 +10,6 @@ export class AppComponent {
   title = 'Angular 2 forms';
 
   languages = ['English', 'Spanish', 'Other'];
+  model = new Employee('Coco', 'Washington');
 
 }
