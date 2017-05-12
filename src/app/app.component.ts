@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'Angular 2 forms';
 
   languages = ['English', 'Spanish', 'Other'];
-  model = new Employee('coco', 'Washington', true);
+  model = new Employee('coco', 'Washington', true, 'w2');
 
   
 
