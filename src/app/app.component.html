@@ -46,16 +46,18 @@
       </label>
     </div>
 
-    <!--<div class="form-group">
+    <div class="form-group">
       <label>Primary Language</label>
-      <select class="form-control">
+      <select class="form-control"
+              name="primaryLanguage"
+              [(ngModel)]="model.primaryLanguage">
         <option *ngFor="let lang of languages" >
           {{ lang }}
         </option>
       </select>
     </div>
 
-    <div class="form-group">
+    <!--<div class="form-group">
       <label>Date Hired</label>
       <input class="form-control" type="date">
     </div>-->
