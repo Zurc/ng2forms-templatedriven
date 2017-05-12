@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular 2 forms';
+
+  languages = ['English', 'Spanish', 'Other'];
+
 }
